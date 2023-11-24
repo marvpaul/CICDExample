@@ -32,5 +32,5 @@ jobs:
 
     - name: Deploy
       run: |
-        npx gh-pages -d dist -t ${{ secrets.GITHUB_TOKEN }}
+        npx gh-pages -d dist -t ${{ secrets.SECRET_TOKEN }}
 
