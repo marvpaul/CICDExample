@@ -25,15 +25,10 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Upload Static Site
-      uses: actions/upload-artifact@v2
-      with:
-        name: artifact
-        path: dist
     - name: Deploy to GitHub Pages
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       uses: JamesIves/github-pages-deploy-action@4.2.0
       with:
         branch: gh-pages
-        folder: artifact
+        folder: dist
         clean: true
