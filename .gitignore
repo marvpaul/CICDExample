@@ -32,6 +32,7 @@ coverage/
 # Optional: Build directories
 dist/
 .build/
+dist/
 out/
 
 # Optional: Environment configuration
