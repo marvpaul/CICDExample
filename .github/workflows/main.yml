@@ -32,8 +32,5 @@ jobs:
 
     - name: Deploy
       run: |
-        # Add deployment steps if needed
-        # For a simple example, you can deploy to GitHub Pages
-        npm run deploy
-        # npx gh-pages -d dist
+        npx gh-pages -d dist -t ${{ secrets.GITHUB_TOKEN }}
 
