@@ -22,15 +22,9 @@ jobs:
     - name: Install Dependencies
       run: npm install
 
-    - name: Configure Git
-      run: |
-        git config --global user.email "marvin.krueger@yahoo.de"
-        git config --global user.name "marvpaul"
-
     - name: Build
       run: npm run build
 
     - name: Deploy
       run: |
-        npx gh-pages -d dist -t ${{ secrets.SECRET_TOKEN }}
-
+        npx gh-pages -d dist -u "marvpaul" -t ${{ secrets.SECRET_TOKEN }}
