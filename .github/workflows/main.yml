@@ -27,4 +27,4 @@ jobs:
 
     - name: Deploy
       run: |
-        npx gh-pages -d dist -u "marvpaul <marvin.krueger@yahoo.de>:${{ secrets.SECRET_TOKEN }}"
+        npx gh-pages -d dist -u "marvpaul <marvin.krueger@yahoo.de>" -t ${{ secrets.SECRET_TOKEN }}
