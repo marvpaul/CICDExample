@@ -29,6 +29,6 @@ jobs:
       run: |
         # Add deployment steps if needed
         # For a simple example, you can deploy to GitHub Pages
-        # npm install -g gh-pages
+        npm run deploy
         # npx gh-pages -d dist
 
